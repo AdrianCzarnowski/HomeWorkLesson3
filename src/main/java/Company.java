@@ -18,7 +18,7 @@ public class Company {
 
         for (int c = 0; c < NUMBER_OF_EMPLOYEES; c++) {
 
-            int order = c+1;
+            int order = c + 1;
 
             System.out.println("Please enter employee's name " + order);
             String name = scan.nextLine();
@@ -31,17 +31,17 @@ public class Company {
             System.out.println("Please enter employee's salary " + order);
             double salary = Double.parseDouble(scan.nextLine());
 
-            Employee e = new Employee(name, surname, salary);
-            employees.add(e);
+            Employee employee = new Employee(name, surname, salary);
+            employees.add(employee);
 
-            System.out.println(e);
+            System.out.println(employee);
 
         }
 
     }
 
     private void check(String s) {
-        if (s.length()==0)
+        if (s.length() == 0)
             throw new IllegalStateException();
     }
 
@@ -56,7 +56,7 @@ public class Company {
         for (int i = 0; i < employees.size(); i++) {
             salary += employees.get(i).getSalary();
         }
-        System.out.println("The sum of the players salaries is " + salary);
+        System.out.println(salary);
     }
 
     private boolean menu() {
@@ -72,7 +72,6 @@ public class Company {
         int input;
         Scanner scanner = new Scanner(System.in);
         input = scanner.nextInt();
-
 
         switch (input) {
             case 1:

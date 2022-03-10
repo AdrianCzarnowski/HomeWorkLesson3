@@ -3,6 +3,5 @@ public class Main {
 
         Company company = new Company();
         company.start();
-
     }
 }

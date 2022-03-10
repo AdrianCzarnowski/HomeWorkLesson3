@@ -1,14 +1,14 @@
 public class Employee {
 
-     String name;
-     String surname;
-     double salary;
+    String name;
+    String surname;
+    double salary;
 
-     public Employee(String name, String surname, double salary) {
-         this.name = name;
-         this.surname = surname;
-         this.salary = salary;
-     }
+    public Employee(String name, String surname, double salary) {
+        this.name = name;
+        this.surname = surname;
+        this.salary = salary;
+    }
 
     public String getName() {
         return name;
@@ -38,8 +38,8 @@ public class Employee {
     public String toString() {
         return
                 "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", salary=" + salary;
+                        ", surname='" + surname + '\'' +
+                        ", salary=" + salary;
     }
 }
 
