@@ -1,1 +1,1 @@
-# Welcome! This program will be helpfull if you are looking for paylist.
+# Welcome! This program will be helpful if you are looking for program to save salary list.
