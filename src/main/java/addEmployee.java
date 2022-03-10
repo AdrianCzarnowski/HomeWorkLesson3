@@ -7,18 +7,18 @@ public class addEmployee {
 
     public addEmployee() {
 
-        System.out.println("Name: ");
+        System.out.println("Please enter employee name: ");
         String name = input.nextLine();
 
-        System.out.println("Surname: ");
+        System.out.println("Please enter employee surname: ");
         String surname = input.nextLine();
 
-        System.out.println("Salary: ");
+        System.out.println("Please enter employee salary: ");
         double salary = input.nextDouble();
 
-        String getAllData = name + " " + surname + " " + salary + " $";
         Company.employees.add(new Employee(name, surname, salary));
 
+        String getAllData = name + " " + surname + " " + salary + " $";
         System.out.println((getAllData) + " Added!");
 
     }

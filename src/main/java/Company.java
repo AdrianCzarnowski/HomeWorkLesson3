@@ -14,7 +14,7 @@ public class Company {
 
     private void setUpListEmployee() {
 
-        System.out.println("Enter 5 employee's date ");
+        System.out.println("Enter 5 employee's data ");
 
         for (int c = 0; c < NUMBER_OF_EMPLOYEES; c++) {
 
@@ -37,7 +37,6 @@ public class Company {
             System.out.println(employee);
 
         }
-
     }
 
     private void check(String enter) {
@@ -46,8 +45,8 @@ public class Company {
     }
 
     private void displayAllData() {
-        for (Employee employee : employees) {
-            System.out.println(employee.toString());
+        for (Employee employees : employees) {
+            System.out.println(employees.toString());
         }
     }
 
@@ -56,7 +55,7 @@ public class Company {
         for (int i = 0; i < employees.size(); i++) {
             salary += employees.get(i).getSalary();
         }
-        System.out.println(salary);
+        System.out.println(salary + " $");
     }
 
     private boolean menu() {
@@ -75,7 +74,7 @@ public class Company {
 
         switch (input) {
             case 1:
-                System.out.println("Sum of all employees salary");
+                System.out.println("Sum of all employees salary :");
                 allSalaries();
                 break;
             case 2:

@@ -22,7 +22,7 @@ public class Employee {
         return surname;
     }
 
-    void setLastName(String surname) {
+    void setSurname(String surname) {
         this.surname = surname;
     }
 
@@ -36,10 +36,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return
-                "name='" + name + '\'' +
-                        ", surname='" + surname + '\'' +
-                        ", salary=" + salary;
+        return name + " " + " " + surname + " " + salary + " $";
     }
 }
 
