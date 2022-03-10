@@ -40,14 +40,14 @@ public class Company {
 
     }
 
-    private void check(String s) {
-        if (s.length() == 0)
+    private void check(String enter) {
+        if (enter.length() == 0)
             throw new IllegalStateException();
     }
 
     private void displayAllData() {
-        for (Employee e : employees) {
-            System.out.println(e.toString());
+        for (Employee employee : employees) {
+            System.out.println(employee.toString());
         }
     }
 
